@@ -7,225 +7,225 @@ db.getCollectionNames()
 //2. Carga la data de ejemplo compartía en al archivo data.js
 
 db.users.insertMany(
-    [
-        {
-            first_name: "Juan",
-            last_name: "Pérez",
-            email: "juan.perez@example.com",
-            password: "hashed_password_123",
-            date_of_birth: "1990-01-01",
-            gender: "male",
-            address: "Calle 123 #45-67, Bogotá, Cundinamarca, 110111, Colombia",
-            phone_number: "+57-1-555-5555",
-            status: "active"
-        },
-        {
-            first_name: "Ana",
-            last_name: "Gómez",
-            email: "ana.gomez@example.com",
-            password: "hashed_password_456",
-            date_of_birth: "1985-05-15",
-            gender: "female",
-            address: "Carrera 7 #12-34, Medellín, Antioquia, 050001, Colombia",
-            phone_number: "+57-4-555-1234",
-            status: "active"
-        },
-        {
-            first_name: "Carlos",
-            last_name: "Ramírez",
-            email: "carlos.ramirez@example.com",
-            password: "hashed_password_789",
-            date_of_birth: "1983-08-22",
-            gender: "male",
-            address: "Calle 45 #67-89, Barranquilla, Atlántico, 080001, Colombia",
-            phone_number: "+57-5-555-9876",
-            status: "inactive"
-        },
-        {
-            first_name: "María",
-            last_name: "García",
-            email: "maria.garcia@example.com",
-            password: "hashed_password_321",
-            date_of_birth: "1995-03-10",
-            gender: "female",
-            address: "Avenida 10 #20-30, Cali, Valle del Cauca, 760001, Colombia",
-            phone_number: "+57-2-555-5432",
-            status: "active"
-        },
-        {
-            first_name: "Pedro",
-            last_name: "Martínez",
-            email: "pedro.martinez@example.com",
-            password: "hashed_password_654",
-            date_of_birth: "1977-11-05",
-            gender: "male",
-            address: "Carrera 50 #30-20, Bogotá, Cundinamarca, 110222, Colombia",
-            status: "active"
-        },
-        {
-            first_name: "Luisa",
-            last_name: "López",
-            email: "luisa.lopez@example.com",
-            password: "hashed_password_987",
-            date_of_birth: "1989-06-15",
-            gender: "female",
-            address: "Calle 70 #15-25, Medellín, Antioquia, 050002, Colombia",
-            phone_number: "+57-4-555-9988",
-            status: "active"
-        },
-        {
-            first_name: "Andrés",
-            last_name: "Hernández",
-            email: "andres.hernandez@example.com",
-            password: "hashed_password_456",
-            date_of_birth: "1980-04-20",
-            gender: "male",
-            address: "Avenida 80 #40-50, Bucaramanga, Santander, 680003, Colombia",
-            phone_number: "+57-7-555-7654",
-            status: "inactive"
-        },
-        {
-            first_name: "Laura",
-            last_name: "Castro",
-            email: "laura.castro@example.com",
-            password: "hashed_password_654",
-            date_of_birth: "1992-09-18",
-            gender: "female",
-            address: "Carrera 25 #15-10, Cartagena, Bolívar, 130001, Colombia",
-            phone_number: "+57-5-555-4567",
-            status: "active"
-        },
-        {
-            first_name: "Jorge",
-            last_name: "Sánchez",
-            email: "jorge.sanchez@example.com",
-            password: "hashed_password_789",
-            date_of_birth: "1987-12-25",
-            gender: "male",
-            address: "Calle 15 #35-45, Pereira, Risaralda, 660001, Colombia",
-            phone_number: "+57-6-555-2345",
-            status: "active"
-        },
-        {
-            first_name: "Sofía",
-            last_name: "Ramírez",
-            email: "sofia.ramirez@example.com",
-            password: "hashed_password_321",
-            date_of_birth: "1998-02-14",
-            gender: "female",
-            address: "Avenida 5 #10-15, Armenia, Quindío, 630001, Colombia",
-            phone_number: "+57-6-555-7890",
-            status: "active"
-        },
-        {
-            first_name: "Diego",
-            last_name: "Gutiérrez",
-            email: "diego.gutierrez@example.com",
-            password: "hashed_password_135",
-            date_of_birth: "1986-07-12",
-            gender: "male",
-            address: "Calle 20 #30-40, Manizales, Caldas, 170001, Colombia",
-            phone_number: "+57-6-555-5678",
-            status: "inactive"
-        },
-        {
-            first_name: "Camila",
-            last_name: "Ortega",
-            email: "camila.ortega@example.com",
-            password: "hashed_password_246",
-            date_of_birth: "1991-04-08",
-            gender: "female",
-            address: "Carrera 15 #25-35, Pasto, Nariño, 520001, Colombia",
-            status: "inactive"
-        },
-        {
-            first_name: "Ricardo",
-            last_name: "Silva",
-            email: "ricardo.silva@example.com",
-            password: "hashed_password_357",
-            date_of_birth: "1984-11-30",
-            gender: "male",
-            address: "Avenida 3 #5-10, Ibague, Tolima, 730001, Colombia",
-            phone_number: "+57-8-555-2346",
-            status: "active"
-        },
-        {
-            first_name: "Valentina",
-            last_name: "Morales",
-            email: "valentina.morales@example.com",
-            password: "hashed_password_468",
-            date_of_birth: "1993-06-25",
-            gender: "female",
-            address: "Calle 50 #60-70, Villavicencio, Meta, 500001, Colombia",
-            phone_number: "+57-8-555-8910",
-            status: "active"
-        },
-        {
-            first_name: "Mateo",
-            last_name: "Jiménez",
-            email: "mateo.jimenez@example.com",
-            password: "hashed_password_579",
-            date_of_birth: "1982-03-17",
-            gender: "male",
-            address: "Carrera 40 #45-55, Cúcuta, Norte de Santander, 540001, Colombia",
-            phone_number: "+57-7-555-3456",
-            status: "active"
-        },
-        {
-            first_name: "Isabella",
-            last_name: "Rojas",
-            email: "isabella.rojas@example.com",
-            password: "hashed_password_680",
-            date_of_birth: "1994-08-20",
-            gender: "female",
-            address: "Avenida 80 #90-100, Santa Marta, Magdalena, 470001, Colombia",
-            phone_number: "+57-5-555-6789",
-            status: "active"
-        },
-        {
-            first_name: "Martín",
-            last_name: "Castillo",
-            email: "martin.castillo@example.com",
-            password: "hashed_password_791",
-            date_of_birth: "1981-05-14",
-            gender: "male",
-            address: "Calle 10 #15-20, Tunja, Boyacá, 150001, Colombia",
-            phone_number: "+57-8-555-4567",
-            status: "active"
-        },
-        {
-            first_name: "Gabriela",
-            last_name: "Herrera",
-            email: "gabriela.herrera@example.com",
-            password: "hashed_password_802",
-            date_of_birth: "1997-02-09",
-            gender: "female",
-            address: "Carrera 20 #30-40, Sincelejo, Sucre, 700001, Colombia",
-            phone_number: "+57-5-555-2345",
-            status: "active"
-        },
-        {
-            first_name: "Felipe",
-            last_name: "Navarro",
-            email: "felipe.navarro@example.com",
-            password: "hashed_password_913",
-            date_of_birth: "1988-09-03",
-            gender: "male",
-            address: "Avenida 15 #25-35, Popayán, Cauca, 190001, Colombia",
-            phone_number: "+57-2-555-7890",
-            status: "active"
-        },
-        {
-            first_name: "Luciana",
-            last_name: "Pineda",
-            email: "luciana.pineda@example.com",
-            password: "hashed_password_024",
-            date_of_birth: "1990-12-18",
-            gender: "female",
-            address: "Calle 30 #40-50, Montería, Córdoba, 230001, Colombia",
-            status: "active"
-        }
-    ]
+  [
+    {
+      first_name: "Juan",
+      last_name: "Pérez",
+      email: "juan.perez@example.com",
+      password: "hashed_password_123",
+      date_of_birth: "1990-01-01",
+      gender: "male",
+      address: "Calle 123 #45-67, Bogotá, Cundinamarca, 110111, Colombia",
+      phone_number: "+57-1-555-5555",
+      status: "active"
+    },
+    {
+      first_name: "Ana",
+      last_name: "Gómez",
+      email: "ana.gomez@example.com",
+      password: "hashed_password_456",
+      date_of_birth: "1985-05-15",
+      gender: "female",
+      address: "Carrera 7 #12-34, Medellín, Antioquia, 050001, Colombia",
+      phone_number: "+57-4-555-1234",
+      status: "active"
+    },
+    {
+      first_name: "Carlos",
+      last_name: "Ramírez",
+      email: "carlos.ramirez@example.com",
+      password: "hashed_password_789",
+      date_of_birth: "1983-08-22",
+      gender: "male",
+      address: "Calle 45 #67-89, Barranquilla, Atlántico, 080001, Colombia",
+      phone_number: "+57-5-555-9876",
+      status: "inactive"
+    },
+    {
+      first_name: "María",
+      last_name: "García",
+      email: "maria.garcia@example.com",
+      password: "hashed_password_321",
+      date_of_birth: "1995-03-10",
+      gender: "female",
+      address: "Avenida 10 #20-30, Cali, Valle del Cauca, 760001, Colombia",
+      phone_number: "+57-2-555-5432",
+      status: "active"
+    },
+    {
+      first_name: "Pedro",
+      last_name: "Martínez",
+      email: "pedro.martinez@example.com",
+      password: "hashed_password_654",
+      date_of_birth: "1977-11-05",
+      gender: "male",
+      address: "Carrera 50 #30-20, Bogotá, Cundinamarca, 110222, Colombia",
+      status: "active"
+    },
+    {
+      first_name: "Luisa",
+      last_name: "López",
+      email: "luisa.lopez@example.com",
+      password: "hashed_password_987",
+      date_of_birth: "1989-06-15",
+      gender: "female",
+      address: "Calle 70 #15-25, Medellín, Antioquia, 050002, Colombia",
+      phone_number: "+57-4-555-9988",
+      status: "active"
+    },
+    {
+      first_name: "Andrés",
+      last_name: "Hernández",
+      email: "andres.hernandez@example.com",
+      password: "hashed_password_456",
+      date_of_birth: "1980-04-20",
+      gender: "male",
+      address: "Avenida 80 #40-50, Bucaramanga, Santander, 680003, Colombia",
+      phone_number: "+57-7-555-7654",
+      status: "inactive"
+    },
+    {
+      first_name: "Laura",
+      last_name: "Castro",
+      email: "laura.castro@example.com",
+      password: "hashed_password_654",
+      date_of_birth: "1992-09-18",
+      gender: "female",
+      address: "Carrera 25 #15-10, Cartagena, Bolívar, 130001, Colombia",
+      phone_number: "+57-5-555-4567",
+      status: "active"
+    },
+    {
+      first_name: "Jorge",
+      last_name: "Sánchez",
+      email: "jorge.sanchez@example.com",
+      password: "hashed_password_789",
+      date_of_birth: "1987-12-25",
+      gender: "male",
+      address: "Calle 15 #35-45, Pereira, Risaralda, 660001, Colombia",
+      phone_number: "+57-6-555-2345",
+      status: "active"
+    },
+    {
+      first_name: "Sofía",
+      last_name: "Ramírez",
+      email: "sofia.ramirez@example.com",
+      password: "hashed_password_321",
+      date_of_birth: "1998-02-14",
+      gender: "female",
+      address: "Avenida 5 #10-15, Armenia, Quindío, 630001, Colombia",
+      phone_number: "+57-6-555-7890",
+      status: "active"
+    },
+    {
+      first_name: "Diego",
+      last_name: "Gutiérrez",
+      email: "diego.gutierrez@example.com",
+      password: "hashed_password_135",
+      date_of_birth: "1986-07-12",
+      gender: "male",
+      address: "Calle 20 #30-40, Manizales, Caldas, 170001, Colombia",
+      phone_number: "+57-6-555-5678",
+      status: "inactive"
+    },
+    {
+      first_name: "Camila",
+      last_name: "Ortega",
+      email: "camila.ortega@example.com",
+      password: "hashed_password_246",
+      date_of_birth: "1991-04-08",
+      gender: "female",
+      address: "Carrera 15 #25-35, Pasto, Nariño, 520001, Colombia",
+      status: "inactive"
+    },
+    {
+      first_name: "Ricardo",
+      last_name: "Silva",
+      email: "ricardo.silva@example.com",
+      password: "hashed_password_357",
+      date_of_birth: "1984-11-30",
+      gender: "male",
+      address: "Avenida 3 #5-10, Ibague, Tolima, 730001, Colombia",
+      phone_number: "+57-8-555-2346",
+      status: "active"
+    },
+    {
+      first_name: "Valentina",
+      last_name: "Morales",
+      email: "valentina.morales@example.com",
+      password: "hashed_password_468",
+      date_of_birth: "1993-06-25",
+      gender: "female",
+      address: "Calle 50 #60-70, Villavicencio, Meta, 500001, Colombia",
+      phone_number: "+57-8-555-8910",
+      status: "active"
+    },
+    {
+      first_name: "Mateo",
+      last_name: "Jiménez",
+      email: "mateo.jimenez@example.com",
+      password: "hashed_password_579",
+      date_of_birth: "1982-03-17",
+      gender: "male",
+      address: "Carrera 40 #45-55, Cúcuta, Norte de Santander, 540001, Colombia",
+      phone_number: "+57-7-555-3456",
+      status: "active"
+    },
+    {
+      first_name: "Isabella",
+      last_name: "Rojas",
+      email: "isabella.rojas@example.com",
+      password: "hashed_password_680",
+      date_of_birth: "1994-08-20",
+      gender: "female",
+      address: "Avenida 80 #90-100, Santa Marta, Magdalena, 470001, Colombia",
+      phone_number: "+57-5-555-6789",
+      status: "active"
+    },
+    {
+      first_name: "Martín",
+      last_name: "Castillo",
+      email: "martin.castillo@example.com",
+      password: "hashed_password_791",
+      date_of_birth: "1981-05-14",
+      gender: "male",
+      address: "Calle 10 #15-20, Tunja, Boyacá, 150001, Colombia",
+      phone_number: "+57-8-555-4567",
+      status: "active"
+    },
+    {
+      first_name: "Gabriela",
+      last_name: "Herrera",
+      email: "gabriela.herrera@example.com",
+      password: "hashed_password_802",
+      date_of_birth: "1997-02-09",
+      gender: "female",
+      address: "Carrera 20 #30-40, Sincelejo, Sucre, 700001, Colombia",
+      phone_number: "+57-5-555-2345",
+      status: "active"
+    },
+    {
+      first_name: "Felipe",
+      last_name: "Navarro",
+      email: "felipe.navarro@example.com",
+      password: "hashed_password_913",
+      date_of_birth: "1988-09-03",
+      gender: "male",
+      address: "Avenida 15 #25-35, Popayán, Cauca, 190001, Colombia",
+      phone_number: "+57-2-555-7890",
+      status: "active"
+    },
+    {
+      first_name: "Luciana",
+      last_name: "Pineda",
+      email: "luciana.pineda@example.com",
+      password: "hashed_password_024",
+      date_of_birth: "1990-12-18",
+      gender: "female",
+      address: "Calle 30 #40-50, Montería, Córdoba, 230001, Colombia",
+      status: "active"
+    }
+  ]
 )
 
 //3. Escribe una consulta para recuperar todos los usuarios de la colección users.
@@ -233,191 +233,217 @@ db.users.find()
 
 // 4. Recupera todos los usuarios que sean de género femenino.
 
-db.users.find({gender:"female"})
+db.users.find({ gender: "female" })
 
 //5. Encuentra todos los usuarios que tengan entre 25 y 35 años de edad.
 
 
-    db.users.find({
-        $expr: {
-          $and: [
-            { $gte: [
-              { $subtract: [
-                { $year: new Date() },
-                { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
-              ]},
-              25
-            ]},
-            { $lt: [
-              { $subtract: [
-                { $year: new Date() },
-                { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
-              ]},
-              36
-            ]}
-          ]
-        }
-      })
+db.users.find({
+  $expr: {
+    $and: [
+      {
+        $gte: [
+          {
+            $subtract: [
+              { $year: new Date() },
+              { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
+            ]
+          },
+          25
+        ]
+      },
+      {
+        $lt: [
+          {
+            $subtract: [
+              { $year: new Date() },
+              { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
+            ]
+          },
+          36
+        ]
+      }
+    ]
+  }
+})
 
 
 //6. Busca todos los usuarios que vivan en Bogotá.
 
 db.users.find(
-    { address: { $regex: "Bogotá", $options: "i" }
+  {
+    address: { $regex: "Bogotá", $options: "i" }
   })
 //7 7. Actualiza el número de teléfono del usuario con email "juan.perez@example.com".
 use("USERS_DB")
 db.users.updateOne(
-    {email:{$eq:"juan.perez@example.com"}},
-    {$set:{phone_number:"350897980"}}
+  { email: { $eq: "juan.perez@example.com" } },
+  { $set: { phone_number: "350897980" } }
 )
 
 //8. Elimina el usuario con email "ana.gomez@example.com".
 
-db.collection.deleteOne({email:"ana.gomez@example.com"}) 
+db.collection.deleteOne({ email: "ana.gomez@example.com" })
 
 //9. Cuenta cuántos usuarios tienen el estado "active".
 
 //opción iterando
 
-var actives= db.users.find( { status: "active" } );
+var actives = db.users.find({ status: "active" });
 actives
 
 //prueba de que efectivamente estuviera contando
 
 db.users.count()
-db.users.count({status: "inactive"})
-db.users.count({status: "active"})
+db.users.count({ status: "inactive" })
+db.users.count({ status: "active" })
 
 
 //10. Ordena todos los usuarios por su fecha de nacimiento de forma ascendente.
 
 db.users.aggregate(
-    [
-      { $project :
-         {
-           month_joined : { $month : "$joined" },
-           name : "$_id",
-           _id : 0
-         }
-      },
-      { $sort : { month_joined : 1 } }
-    ]
-  )
+  [
+    {
+      $project:
+      {
+        month_joined: { $month: "$joined" },
+        name: "$_id",
+        _id: 0
+      }
+    },
+    { $sort: { month_joined: 1 } }
+  ]
+)
 
-  //11. Busca todos los usuarios cuyo nombre empiece con la letra "M".
-  db.users.find(
-    { "first_name": { $regex: /^M/ } }
- )
+//11. Busca todos los usuarios cuyo nombre empiece con la letra "M".
+db.users.find(
+  { "first_name": { $regex: /^M/ } }
+)
 
 
-  
+
 //12. Encuentra todos los usuarios cuyo estado sea "active".
 
-db.users.find({status:"active"})
+db.users.find({ status: "active" })
 
 //13. Encuentra todos los usuarios que tengan el rol de "admin".
 
-db.users.find({role:"admin"}) //este no se encuentra como atributo dentro de los documentos.
+db.users.find({ role: "admin" }) //este no se encuentra como atributo dentro de los documentos.
 
 //14. Encuentra todos los usuarios cuyo género no sea "male".
 
-db.users.find({gender:"male"})
+db.users.find({ gender: "male" })
 
 //15. Encuentra todos los usuarios que no vivan en "Medellín".
 
 db.users.find(
-    { "address.city": { $ne: "Medellín" } }
+  { "address.city": { $ne: "Medellín" } }
 )
- 
+
 // 16. Encuentra todos los usuarios nacidos después del 1 de enero de 1990.
 
-db.users.find( { date_of_birth: { $gt: '1990-01-01' } } )
+db.users.find({ date_of_birth: { $gt: '1990-01-01' } })
 
 
 //17. Encuentra todos los usuarios cuya edad sea mayor a 30 años (calcular usando date_of_birth).
 db.users.find({
-    $expr: {
-      $and: [
-        { $gt: [
-          { $subtract: [
-            { $year: new Date() },
-            { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
-          ]},
+  $expr: {
+    $and: [
+      {
+        $gt: [
+          {
+            $subtract: [
+              { $year: new Date() },
+              { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
+            ]
+          },
           30
-        ]},
-      ]
-    }
-  })
-
-
-  //18. Encuentra todos los usuarios nacidos antes del 1 de enero de 1985.
-  db.users.find( { date_of_birth: { $lt: '1985-01-01' } } )
-
-  //19. Encuentra todos los usuarios cuya edad sea menor a 25 años (calcular usando date_of_birth).
-
-  db.users.find({
-    $expr: {
-      $and: [
-        { $lte: [
-          { $subtract: [
-            { $year: new Date() },
-            { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
-          ]},
-          25
-        ]},
-      ]
-    }
-  })
-
-  // 20. Encuentra todos los usuarios nacidos a partir del 1 de enero de 1985 (inclusive).
-
-  db.users.find( { date_of_birth: { $gte: '1985-01-01' } } )
-
-  //21. Encuentra todos los usuarios cuya edad sea mayor o igual a 30 años (calcular usandodate_of_birth).
-
-  db.users.find({
-    $expr: {
-      $and: [
-        { $gte: [
-          { $subtract: [
-            { $year: new Date() },
-            { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
-          ]},
-          30
-        ]},
-      ]
-    }
-  })
-
-  //22. Encuentra todos los usuarios nacidos hasta el 1 de enero de 1990 (inclusive).
-  
-  db.users.find( { date_of_birth: { $lte: '1985-01-01' } } )
-
-  //23. . Encuentra todos los usuarios cuya edad sea menor o igual a 25 años (calcular usando date_of_birth).
-
-  db.users.find({
-    $expr: {
-      $and: [
-        { $gte: [
-          { $subtract: [
-            { $year: new Date() },
-            { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
-          ]},
-          25
-        ]},
-      ]
-    }
-  })
-
- //24 Encuentra todos los usuarios que vivan en "Bogotá" o "Medellín".>
-
- db.users.find({
-    $or: [
-      { address: { $regex: "Bogotá", $options: "i" } },
-      { address: { $regex: "Medellín", $options: "i" } }
+        ]
+      },
     ]
-  })
+  }
+})
+
+
+//18. Encuentra todos los usuarios nacidos antes del 1 de enero de 1985.
+db.users.find({ date_of_birth: { $lt: '1985-01-01' } })
+
+//19. Encuentra todos los usuarios cuya edad sea menor a 25 años (calcular usando date_of_birth).
+
+db.users.find({
+  $expr: {
+    $and: [
+      {
+        $lte: [
+          {
+            $subtract: [
+              { $year: new Date() },
+              { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
+            ]
+          },
+          25
+        ]
+      },
+    ]
+  }
+})
+
+// 20. Encuentra todos los usuarios nacidos a partir del 1 de enero de 1985 (inclusive).
+
+db.users.find({ date_of_birth: { $gte: '1985-01-01' } })
+
+//21. Encuentra todos los usuarios cuya edad sea mayor o igual a 30 años (calcular usandodate_of_birth).
+
+db.users.find({
+  $expr: {
+    $and: [
+      {
+        $gte: [
+          {
+            $subtract: [
+              { $year: new Date() },
+              { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
+            ]
+          },
+          30
+        ]
+      },
+    ]
+  }
+})
+
+//22. Encuentra todos los usuarios nacidos hasta el 1 de enero de 1990 (inclusive).
+
+db.users.find({ date_of_birth: { $lte: '1985-01-01' } })
+
+//23. . Encuentra todos los usuarios cuya edad sea menor o igual a 25 años (calcular usando date_of_birth).
+
+db.users.find({
+  $expr: {
+    $and: [
+      {
+        $gte: [
+          {
+            $subtract: [
+              { $year: new Date() },
+              { $year: { $dateFromString: { dateString: "$date_of_birth" } } }
+            ]
+          },
+          25
+        ]
+      },
+    ]
+  }
+})
+
+//24 Encuentra todos los usuarios que vivan en "Bogotá" o "Medellín".>
+
+db.users.find({
+  $or: [
+    { address: { $regex: "Bogotá", $options: "i" } },
+    { address: { $regex: "Medellín", $options: "i" } }
+  ]
+})
 
 
 // 25 (NO APLICA)
@@ -426,14 +452,51 @@ db.users.find({
 //26. Encuentra todos los usuarios que no vivan en "Bogotá" ni "Medellín".
 
 db.users.find({
-    $nor: [
-      { address: { $regex: "Bogotá", $options: "i" } },
-      { address: { $regex: "Medellín", $options: "i" } }
-    ]
-  })
+  $nor: [
+    { address: { $regex: "Bogotá", $options: "i" } },
+    { address: { $regex: "Medellín", $options: "i" } }
+  ]
+})
 
 // 27 (NO APLICA)
 
 // 28 (NO APLICA)
 
-//GRACIAS!!
+// 29 (NO APLICA)
+
+//30. Encuentra todos los usuarios que vivan en "Bogotá" y sean de género "male".
+
+db.users.find({ address: { $regex: "Bogotá", $options: "i" }, gender: "male" })
+
+// 32 Encuentra todos los usuarios que vivan en "Bogotá" o sean de género "female".
+
+
+
+db.users.find({
+  $or:[{ address: { $regex: "Bogotá", $options: "i" } },
+    { gender: "female" }]
+ })
+
+ //33 (NO APLICA)
+
+
+  //34. Encuentra todos los usuarios cuyo género no sea "female" (usando $not).
+
+  db.users.find({
+    $nor: [
+      { gender: "female" }      
+    ]
+  })
+
+  //35 (NO APLICA)
+
+  //36. Encuentra todos los usuarios que no vivan en "Bogotá" ni sean de género "female".
+
+  db.users.find({
+    $nor:[{ address: { $regex: "Bogotá", $options: "i" } },
+      { gender: "female" }]
+   })
+  
+   //37.(NO APLICA)
+
+   //GRACIAS!!
